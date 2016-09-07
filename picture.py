@@ -31,10 +31,11 @@ red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
 blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
+pink = Color(0xFFC0CB,1.0)
 
 thinline = LineStyle(1, black)
 rectangle = PolygonAsset([(0,0), (0,100), (250,100), (250,0)], thinline, blue)
-circle = CircleAsset(25, thinline, red)
+circle = CircleAsset(20, thinline, black)
 ellipse = EllipseAsset(10, 30, thinline, green)
 roof= PolygonAsset([(50,100), (175,0), (300,100), (50,100)], thinline, red)
 
@@ -42,6 +43,9 @@ roof= PolygonAsset([(50,100), (175,0), (300,100), (50,100)], thinline, red)
 Sprite(rectangle, (50, 100))
 Sprite(roof)
 Sprite(ellipse, (175,170))
+Sprite(circle, (60,220))
+Sprite(circle, (290,220))
+
 # add your code here /\  /\  /\
 
 
